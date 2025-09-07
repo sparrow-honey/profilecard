@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE</title>
+    <style>
+        body,html{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .cont{
+            height: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            /* horizontal alignment x axis*/
+            align-items: center;
+            /* vertical alignmnet y axis*/
+        }
+        .box{
+            background-color: #333;
+            text-align: center;
+            padding: 100px 100px;
+            /* margin size vertical-horizontal 100x100 */
+            border-radius: 20px;
+            border: 5px solid gold;
+        }
+        .box:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        #profile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: auto;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid gold;
+        }
+        button{
+            background-color: rgb(90, 90, 231);
+            color: white;
+            height: 50px;
+            width: 150px;
+            border-radius: 20px;
+            border: 2px solid gold;
+        }
+        button:hover{
+            transform: scale(1.03);
+        }
+        h2{
+            color: aliceblue;
+            font-size: 20px;
+        }
+        #l #g #h{
+            border-radius: 50%;
+            border: 2px solid gold;
+        }
+        #l:hover, #g:hover, #x:hover{
+            transform: scale(1.1);
+        }
+        .logo{
+            gap: 50px;
+
+        }
+        .logo img{
+            margin-top: 20px;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box">
+            <h2>ANSH DIXIT</h2>
+            <img id="profile" src="./img/download.jpg" alt="Profile photo">
+            <button>View Portfolio</button>
+            <button>Major Project</button>
+            <div class="logo">
+                <img src="./img/linkedin.png" alt="linkedin" id="l">
+                <img src="./img/download.png" alt="X img" id="x">
+                <img src="./img/git.png" alt="github" id="g">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
